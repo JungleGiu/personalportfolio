@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+
+html,body {
+  margin : 0;
+  padding : 0;
+ background-color: #dbe4fb;
+ font-family: 'Google Sans', monospace;
+}
+h1,h2{
+  font-family: 'Roboto Flex', sans-serif;
+} 
+@layer utilities{
+  @keyframes loading {
+    0%{
+      transform : translateX(-100%)
+    }
+    100% {
+      transform : translateX(250%)
+    }
+  }
+  .animate-loading-bar {
+    animation : loading 2s infinite linear
+  }
+}
+@layer utilities {
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .animate-blink {
+    animation: blink 1s step-start infinite;
+  }
+}
