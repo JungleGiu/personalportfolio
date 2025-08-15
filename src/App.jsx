@@ -14,11 +14,11 @@ import "./index.css";
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   return (
-    <div className="App">
+      <ThemeProvider>
+    <div className=" bg-violet-300 dark:h-screen dark:bg-gradient-to-br from-blue-900 via-violet-800 to-teal-500">
       {!isLoaded ? (
         <Loading onComplete={() => setIsLoaded(true)} />
       ) : (
-        <ThemeProvider>
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Home />} />
@@ -29,9 +29,9 @@ function App() {
       <Route path="/contact" element={<Contact />} /> */}
             </Routes>
           </BrowserRouter>
-        </ThemeProvider>
       )}
     </div>
+      </ThemeProvider>
   );
 }
 

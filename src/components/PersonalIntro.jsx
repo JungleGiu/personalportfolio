@@ -4,7 +4,7 @@ import github from '../assets/github.svg'
 const PersonalIntro = () => {
   return (
     <div className='flex flex-row justify-center align-center'>
-    <div className="flex flex-col  mt-25 ml-15 text-blue-950">
+    <div className="flex flex-col  mt-25 ml-15 text-gray-200">
         <p className=' mb-3'>Hi everybody, I am</p>
       <h2 className="text-3xl mb-2 font-semibold">Giú Eminente</h2>
       <h3 className="text-2xl font-bold">Creative Full-Stack Developer</h3>

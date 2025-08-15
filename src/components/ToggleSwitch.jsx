@@ -13,18 +13,19 @@ const ToggleSwitch = () => {
     type="checkbox"
     className="sr-only peer"
     onChange={toggleTheme}
-    checked={theme === "dark" ? true : false}
+    checked={theme === "dark"}
   />
   {/* track */}
   <div className="absolute inset-0 bg-blue-950 rounded-full peer-checked:bg-gray-700 transition-colors duration-300"></div>
   {/* thumb */}
   <span className="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full transition-transform duration-300 transform peer-checked:translate-x-6"></span>
   <label
+  
     htmlFor="darkmode-toggle"
     className="absolute inset-0 cursor-pointer"
   >{theme === "light" ?
-   <img src={dark} alt="light-mode icon"  className='translate-x-6'/> : 
-   <img src={light} alt="dark-mode icon" />
+   <img src={light} alt="light-mode icon"  className='translate-x-6'/> : 
+   <img src={dark} alt="dark-mode icon" />
    }</label>
 </div>
   )
