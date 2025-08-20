@@ -15,7 +15,7 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   return (
       <ThemeProvider>
-    <div className=" bg-violet-300 dark:h-screen dark:bg-gradient-to-br from-blue-900 via-violet-800 to-teal-500">
+   <div className="min-h-screen bg-yellow-400 dark:bg-purple-900">
       {!isLoaded ? (
         <Loading onComplete={() => setIsLoaded(true)} />
       ) : (
