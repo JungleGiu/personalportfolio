@@ -38,3 +38,12 @@ h1,h2{
     animation: blink 1s step-start infinite;
   }
 }
+.mask-fade-edges {
+  mask: radial-gradient(circle, black 60%, transparent 70%);
+  -webkit-mask: radial-gradient(linear, black 20%, transparent 80%);
+}
+
+.invert-colors {
+  filter: invert(1);
+}
+

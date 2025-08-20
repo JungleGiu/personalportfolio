@@ -1,3 +1,4 @@
+import { Footer } from '../components/Footer.jsx'
 import  NavBar  from '../components/NavBar.jsx'
 import PersonalIntro from '../components/PersonalIntro.jsx'
 const Home = () => {
@@ -5,6 +6,7 @@ const Home = () => {
     <div>
       <NavBar/>
       <PersonalIntro/>
+      <Footer/>
     </div>
   )
 }

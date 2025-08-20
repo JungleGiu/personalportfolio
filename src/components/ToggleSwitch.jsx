@@ -5,11 +5,8 @@ import dark from '../assets/moon.svg'
 
 const ToggleSwitch = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
-  
-  console.log('🎛️ ToggleSwitch render - theme:', theme);
 
   const handleToggle = () => {
-    console.log('🎛️ handleToggle chiamato!');
     toggleTheme();
   };
 
@@ -23,7 +20,7 @@ const ToggleSwitch = () => {
         checked={theme === "dark"}
       />
       {/* track */}
-      <div className="absolute inset-0 bg-blue-950 rounded-full peer-checked:bg-gray-700 transition-colors duration-300"></div>
+      <div className="absolute inset-0 bg-blue-950 rounded-full peer-checked:bg-blue-950 transition-colors duration-300"></div>
       {/* thumb */}
       <span className="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full transition-transform duration-300 transform peer-checked:translate-x-6"></span>
       <label
@@ -31,8 +28,8 @@ const ToggleSwitch = () => {
         className="absolute inset-0 cursor-pointer"
       >
         {theme === "light" ?
-          <img src={light} alt="light-mode icon" className='translate-x-6'/> : 
-          <img src={dark} alt="dark-mode icon" />
+          <img src={dark} alt="light-mode icon" className='translate-x-6'/> : 
+          <img src={light} alt="dark-mode icon" />
         }
       </label>
     </div>

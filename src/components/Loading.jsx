@@ -21,8 +21,8 @@ const Loading = ({ onComplete }) => {
 
   return (
     
-    <div className="fixed inset-0 z-50 bg-black text-white flex flex-col items-center justify-center">
-      <div className="mb-4 text-4xl font-mono font-bold">
+    <div className="fixed inset-0 z-50 bg-black opacity-60 text-white flex flex-col items-center justify-center">
+      <div className=" opacity-100 mb-4 text-4xl font-mono font-bold">
         {text}
         <span className="animate-blink ml-1">|</span>
       </div>
