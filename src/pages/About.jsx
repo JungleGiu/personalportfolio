@@ -2,9 +2,9 @@ import NavBar from "../components/NavBar";
 import { Footer } from "../components/Footer";
 import { SideBar } from "../components/SideBar";
 import { useEffect, useState } from "react";
-import { Education } from "../components/Education";
-import { Background } from "../components/Background";
-import { Skills } from "../components/Skills";
+import { Education } from "../components/About/Education";
+import { Background } from "../components/About/Background";
+import { Skills } from "../components/About/Skills";
 
 export const About = () => {
   const [category, setCategory] = useState([]);
