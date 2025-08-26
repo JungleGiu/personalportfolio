@@ -13,7 +13,7 @@ const NavBar = () => {
             <Link to="/" className='cursor-pointer pl-2'><span className='group-hover:animate-blink animate:none'>_</span>home</Link>
           </li>
           <li className="group flex items-center h-full pr-5 divide-x divide-blue-950">
-            <a to="/projects" className='cursor-pointer pl-2'><span className='group-hover:animate-blink animate:none'>_</span>projects</a>
+            <Link to="/projects" className='cursor-pointer pl-2'><span className='group-hover:animate-blink animate:none'>_</span>projects</Link>
           </li>
           <li className="group flex items-center h-full pr-5">
             <Link to="/about" className='cursor-pointer pl-2'><span className='group-hover:animate-blink animate:none'>_</span>about</Link>
