@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const Loading = ({ onComplete }) => {
+export const Loading = ({ onComplete }) => {
   const [text, setText] = useState("");
   const fullText = "Loading ";
 
@@ -32,4 +32,4 @@ const Loading = ({ onComplete }) => {
   );
 };
 
-export default Loading;
+

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import  ToggleSwitch  from './ToggleSwitch'; 
-const NavBar = () => {
+import  { ToggleSwitch }  from './ToggleSwitch'; 
+export const NavBar = () => {
 
   return (
     <nav className="flex justify-between min-h-16 items-stretch h-15   text-blue-950 dark:border-gray-200 border-blue-950 border-2 ">
@@ -19,7 +19,7 @@ const NavBar = () => {
             <Link to="/about" className='cursor-pointer pl-2'><span className='group-hover:animate-blink animate:none'>_</span>about</Link>
           </li>
           <li className=" group flex items-center h-ful pr-5">
-            <a to="/contact" className='cursor-pointer pl-2'><span className='group-hover:animate-blink animate:none'>_</span>contact</a>
+            <Link to="/contact" className='cursor-pointer pl-2'><span className='group-hover:animate-blink animate:none'>_</span>contact</Link>
           </li>
         </ul>
       </div>
@@ -27,4 +27,3 @@ const NavBar = () => {
     </nav>
   )
 }
-export default NavBar;

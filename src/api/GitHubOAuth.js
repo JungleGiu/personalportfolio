@@ -9,7 +9,7 @@ export const getMyProjects = async () => {
     return data;
 };
 
-export const getMyVanillaProjects = async () => {
+export const getMyJavaScriptProjects = async () => {
     const response = await fetch("https://api.github.com/users/JungleGiu/repos?tags=javascript&visibility=public", {
         headers: {
             Accept: "application/vnd.github.v3+json",

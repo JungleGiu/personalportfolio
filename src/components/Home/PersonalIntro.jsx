@@ -1,6 +1,6 @@
-import profilepicture from '../assets/fototessera.jpg'
+import profilepicture from '../../assets/fototessera.jpg'
 
-const PersonalIntro = () => {
+ export const PersonalIntro = () => {
   return (
 <div className='flex flex-row justify-center align-center items-center mt-20'>
   <div className='flex flex-row justify-center items-center mr-55 w-2/3 relative'> 
@@ -11,12 +11,8 @@ const PersonalIntro = () => {
         <p className=' mb-3'>Hi everybody, I am</p>
       <h2 className="text-3xl mb-2 font-semibold">Giú Eminente</h2>
       <h3 className="text-2xl font-bold">Creative Full-Stack Developer</h3>
-      <p className="mt-5 w-4/5">I'm a web developer with a passion for creating beautiful and functional websites finding the more efficient tools to do it.</p>
-      
+      <p className="mt-5 w-4/5">I'm a web developer with a passion for creating beautiful and functional websites finding the more efficient tools to do it.</p>    
     </div>
-   
     </div>
   )
 }
-
-export default PersonalIntro

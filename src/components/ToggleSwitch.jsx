@@ -1,9 +1,9 @@
-import {useContext} from 'react'
+import { useContext } from 'react'
 import { ThemeContext } from '../context/Theme.jsx'
 import light from '../assets/sun.svg'
 import dark from '../assets/moon.svg'
 
-const ToggleSwitch = () => {
+export const ToggleSwitch = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   const handleToggle = () => {
@@ -36,4 +36,3 @@ const ToggleSwitch = () => {
   )
 }
 
-export default ToggleSwitch;
