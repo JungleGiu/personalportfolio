@@ -6,7 +6,7 @@ import { useContext } from "react";
 export const Footer = () => {
   const { theme } = useContext(ThemeContext);
   return (
-      <footer className="fixed bottom-0 h-14 w-full flex justify-between bg-inherit dark:bg-inherit dark:border-gray-200 border-blue-950 border-t-2">
+      <footer className="fixed bottom-0 h-14 w-full flex justify-between backdrop-blur-md dark:backdrop-blur-md bg-opacity-70  dark:border-gray-200 border-blue-950 border-t-2">
       <div className="flex justify-start items-center h-full">
         <div className="px-7 h-full flex items-center border-r border-blue-950 dark:border-gray-200">
           <p className="text-blue-950 dark:text-gray-200">find me on:</p>
@@ -16,7 +16,7 @@ export const Footer = () => {
           href="https://www.linkedin.com/in/giu-eminente/"
           target="_blank"
           rel="noopener noreferrer"
-           className="px-7 h-full flex items-center justify-center border-r border-blue-950 dark:border-gray-200 hover:bg-black/10"
+           className="px-3 h-full flex items-center justify-center border-r border-blue-950 dark:border-gray-200 hover:bg-black/10"
         >
           <img
             src={linkedin}
@@ -29,7 +29,7 @@ export const Footer = () => {
           href="https://github.com/JungleGiu"
           target="_blank"
           rel="noopener noreferrer"
-                className="px-6 h-full flex items-center justify-center hover:bg-black/10"
+                className="px-3 h-full flex items-center  border-r-2 border-blue-950 dark:border-gray-200 justify-center hover:bg-black/10"
         >
           <img
             src={github}
